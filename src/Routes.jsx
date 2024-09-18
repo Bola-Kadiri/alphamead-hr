@@ -2,7 +2,7 @@ import { createRoutesFromElements, createBrowserRouter, Route} from "react-route
 import Layout from "./Layout/Layout";
 
 import Joblist from "./pages/joblist/Joblist";
-import Home from "./component/Home/Home";
+import Home from "./component/home/Home/";
 
 
 
