@@ -1,5 +1,5 @@
 
-import "../joblist/joblist.css"
+import "./joblist.css"
 
 const Joblist =()=>{
     return(
