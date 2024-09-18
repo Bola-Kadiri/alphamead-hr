@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: montserrat;
+    background-color: #fff;
+
+}
+
+.nav-bar img{
+    width: 100%;
+    max-width: 110px;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    gap: 45px;
+    margin-right: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  .nav-link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+    color: #000; /* Default link color */
+    transition: color 0.3s ease;
+  }
+  .nav-links button{
+    width: 150px;
+    padding: 15px 20px;
+    background-color: #76c04e;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  /* Styling for the underline animation */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px; /* Position of the underline */
+    left: 50%;
+    background-color:#76c04e;/* Underline color */
+    transition: all 0.1s ease;
+    transform: translateX(-50%);
+  }
+
+  
+  /* Active state styling */
+  .nav-link.active {
+    color: #000; /* Active link color */
+  }
+  
+  /* Underline animation when link is active */
+  .nav-link.active::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+  
+  /* Animate underline on hover */
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
